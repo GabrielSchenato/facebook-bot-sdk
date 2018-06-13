@@ -1,0 +1,19 @@
+{
+    "name": "schenato/facebook-bot-sdk",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Gabriel Schenato",
+            "email": "gabriel.schenato@inovadora.com.br"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "phpunit/phpunit": "^7.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "CodeBot\\": "src"
+        }
+    }
+}
