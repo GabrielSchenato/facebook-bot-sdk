@@ -13,7 +13,7 @@ namespace CodeBot\Message;
  *
  * @author gabriel
  */
-class Text implements MessageInterface {
+class File implements MessageInterface {
 
     /**
      * @var string
@@ -32,8 +32,12 @@ class Text implements MessageInterface {
                 'id' => $this->recipientId
             ],
             'message' => [
-                'text' => $messageText,
-                'metadata' => 'DEVELOPER_DEFINED_METADATA'
+                'attachment' => [
+                    'type' => 'file',
+                    'payload' => [
+                        'url' => $messageText
+                    ]
+                ]
             ]
         ];
     }
