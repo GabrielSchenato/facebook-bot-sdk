@@ -36,7 +36,7 @@ class CallSendApi {
         
         $response = $client->request($method, $url, [
             'json' => $message,
-            'query' => ['acess_token' => $this->pageAcessToken]
+            'query' => ['access_token' => $this->pageAcessToken]
         ]);
         
         return (string)$response->getBody();
