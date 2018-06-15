@@ -3,7 +3,6 @@
 namespace CodeBot\TemplatesMessage;
 
 use CodeBot\Element\ElementInterface;
-use CodeBot\Message\MessageInterface;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -16,7 +15,7 @@ use CodeBot\Message\MessageInterface;
  *
  * @author gabriel
  */
-class ButtonsTemplate implements MessageInterface
+class ButtonsTemplate implements TemplateInterface
 {
 
     protected $buttons = [];
