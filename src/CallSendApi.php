@@ -18,6 +18,7 @@ use GuzzleHttp\Client;
 class CallSendApi {
 
     const URL = 'https://graph.facebook.com/v3.0/me/messages';
+    const URL_PROFILE = 'https://graph.facebook.com/v3.0/me/messenger_profile';
         
     /**
      * @var string
